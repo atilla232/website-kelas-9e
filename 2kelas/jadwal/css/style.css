@@ -1,0 +1,136 @@
+@font-face {
+  font-family: "exo_2regular";
+  src: url(../font/exo2-variablefont_wght-webfont.woff2) format(.woff2);
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  overflow-x: hidden;
+}
+/* elemen  */
+.container {
+  width: 60vw;
+  border: 1 solid gray;
+  padding: 20px;
+}
+
+.isi-jadwal {
+  background-color: rgba(19, 18, 18, 0.72);
+  margin-left: 20px;
+  padding: 20px;
+  padding-left: 40px;
+  box-sizing: border-box;
+  color: white;
+  width: 60vw;
+  border-radius: 10px;
+  transition: 500ms;
+  border: green 4px solid;
+  margin-top: 20px;
+  animation: animasi 800ms ease forwards, colorChange infinite 10s;
+  /* animation: animasi 5s linear infinite; */
+}
+
+.isi-jadwal h1 {
+  font-size: 1.5625rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.isi-jadwal ul li {
+  list-style-type: disc;
+  padding-bottom: 5px;
+}
+
+.main {
+  /* position: absolute;
+  width: 100vw;
+  top: 50px; */
+  display: grid;
+  grid-template-columns: 1fr 0.45fr;
+  grid-template-rows: 1fr 1fr 20px;
+  padding: 20px;
+  padding-left: 0;
+  height: 200vh;
+}
+/* sidebar */
+.container2 {
+  background-color: rgba(19, 18, 18, 0.7);
+  border-radius: 10px;
+  width: 25vw;
+  margin-top: 35px;
+  box-sizing: border-box;
+  padding: 20px;
+  color: white;
+  height: fit-content;
+  min-height: fit-content;
+  border: green 4px solid;
+  animation: colorChange infinite 10s;
+}
+
+.container2 h1 {
+  font-size: 1.875em;
+  font-weight: bold;
+}
+
+.container2 ul li {
+  padding-bottom: 20px;
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+/* animation  */
+
+@keyframes animasi {
+  0% {
+    transform: translateX(-900%); /* Mulai dari luar layar sebelah kiri */
+  }
+
+  100% {
+    transform: translateX(0); /* Mulai dari luar layar sebelah kiri */
+  }
+}
+
+@keyframes colorChange {
+  0% {
+    border-color: green;
+  }
+
+  10% {
+    border-color: yellow;
+  }
+
+  20% {
+    border-color: hotpink;
+  }
+
+  30% {
+    border-color: red;
+  }
+
+  40% {
+    border-color: purple;
+  }
+  50% {
+    border-color: yellow;
+  }
+
+  60% {
+    border-color: cyan;
+  }
+
+  70% {
+    border-color: skyblue;
+  }
+
+  80% {
+    border-color: pink;
+  }
+
+  90% {
+    border-color: red;
+  }
+
+  100% {
+    border-color: yellow;
+  }
+}

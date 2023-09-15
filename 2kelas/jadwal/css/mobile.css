@@ -1,0 +1,53 @@
+@media (max-width: 768px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: 100vw;
+    /* height: 200vh; */
+    /* min-height: 100vh; */
+    padding-top: 0;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+  }
+
+  .isi-jadwal {
+    margin-left: 0;
+    width: 90vw;
+    box-shadow: none;
+  }
+
+  .container2 {
+    /* height: fit-content; */
+    width: 100vw;
+    margin-bottom: 0;
+    box-shadow: none;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border: none;
+    animation: none;
+    background-color: rgba(19, 18, 18, 1);
+  }
+}
+
+@media (min-height: 1050px) {
+  .container2 {
+    height: fit-content;
+    width: 25vw;
+    margin-bottom: 0;
+    box-shadow: none;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .main {
+    display: block;
+    width: 100vw;
+    height: 10vh;
+    min-height: 100vh;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 0.45fr;
+    grid-template-rows: 1fr 80px 20px;
+  }
+}

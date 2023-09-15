@@ -1,0 +1,15 @@
+#selasa {
+  animation: animasi 920ms ease forwards, colorChange infinite 10s;
+}
+
+#rabu {
+  animation: animasi 940ms ease forwards, colorChange infinite 10s;
+}
+
+#kamis {
+  animation: animasi 960ms ease forwards, colorChange infinite 10s;
+}
+
+#jumat {
+  animation: animasi 980ms ease forwards, colorChange infinite 10s;
+}

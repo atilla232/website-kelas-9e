@@ -2,6 +2,9 @@
 section {
   min-height: 100vh;
 }
+
+.article-1 {
+}
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -12,6 +15,7 @@ section {
   width: 100vw;
   height: auto;
   text-transform: capitalize;
+  /* margin-top: 30px; */
 }
 .container .card {
   margin-top: 50px;

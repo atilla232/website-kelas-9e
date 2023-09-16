@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>about-class</title>
+    <title id="dynamicTitle"></title>
     <link rel="stylesheet" href="../../1main css/body.css" />
     <link rel="stylesheet" href="../../1main css/reset.css" />
     <link rel="stylesheet" href="../../1main css/navbar.css" />
@@ -24,7 +24,7 @@
   </head>
   <body>
     <!-- * navbar -->
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg position-fixed z-3 top-0 start-0 end-0">
       <div class="container-fluid ms-3">
         <a class="navbar-brand text-warning" href="#">Navbar</a>
         <button
@@ -41,7 +41,10 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto me-3">
             <li class="nav-item">
-              <a class="nav-link text-light" aria-current="page" href="#"
+              <a
+                class="nav-link text-light"
+                aria-current="page"
+                href="index.html"
                 >Home</a
               >
             </li>
@@ -71,7 +74,10 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-light" aria-current="page" href="#"
+              <a
+                class="nav-link text-light"
+                aria-current="page"
+                href="forum/forum.html"
                 >Forum</a
               >
             </li>
@@ -85,7 +91,7 @@
       </div>
     </nav>
     <!-- * end navbar -->
-    <section></section>
+    <section class="mt-5"></section>
     <footer>
       <div class="footer-container">
         <div class="social-icons">
@@ -119,5 +125,6 @@
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
     ></script>
+    <script src="../../script.js"></script>
   </body>
 </html>

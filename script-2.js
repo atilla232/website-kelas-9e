@@ -5,9 +5,9 @@ document.addEventListener("DOMContentLoaded", function () {
   navLinks.forEach((link) => {
     const linkPath = new URL(link.href).pathname; // Dapatkan path URL dari tautan
     if (currentLocation === linkPath) {
-      link.id = "active"; // Mengganti kelas "active" dengan ID "active" jika cocok
+      link.classList.add("active"); // Tambahkan kelas "active" jika cocok
     } else {
-      link.removeAttribute("id"); // Menghapus ID "active" jika tidak cocok
+      link.classList.remove("active"); // Hapus kelas "active" jika tidak cocok
     }
   });
 });

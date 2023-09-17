@@ -53,11 +53,11 @@ nav {
   background-color: initial;
 }
 
-#active {
+.active {
   position: relative;
 }
 
-#active::before {
+.active::before {
   content: "";
   display: block;
   position: absolute;
